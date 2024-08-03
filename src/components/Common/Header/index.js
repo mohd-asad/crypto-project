@@ -1,9 +1,12 @@
 import React from "react";
 import "./styles.css";
+import AnchorTemporaryDrawer from "./drawer";
+import Button from "../Button";
+
 function Header() {
   return (
-    <div className="header">
-      <h1>
+    <div className="navbar">
+      <h1 className="logo">
         CryptoTracker<span style={{ color: "var(--blue)" }}>.</span>
       </h1>
       <div className="links">
@@ -16,6 +19,16 @@ function Header() {
         <a href="/watchlist">
           <p className="link">Watchlist</p>
         </a>
+        <a href="#">
+          <Button
+            text={"Dashboard"}
+            outLined={true}
+            onClick={() => console.log("Btn Clicked")}
+          />
+        </a>
+      </div>
+      <div className="mobile-drawer">
+        <AnchorTemporaryDrawer></AnchorTemporaryDrawer>
       </div>
     </div>
   );
