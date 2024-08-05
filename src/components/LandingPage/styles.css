@@ -1,0 +1,128 @@
+.main-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 3rem;
+}
+
+.track-crypto,
+.real-time {
+  font-size: 6.5rem;
+  margin: 0;
+}
+
+.track-crypto:hover {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--white);
+  color: var(--black);
+  transition: all 0.3s;
+}
+
+.real-time {
+  color: var(--blue);
+}
+
+.text {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.btn-flex {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.phone-component {
+  position: relative;
+  width: 40%;
+  padding: 1rem;
+}
+
+.phone {
+  position: absolute;
+  z-index: 100;
+  min-width: 300px;
+  right: 10px;
+  width: 50%;
+}
+
+.gradient {
+  position: absolute;
+  min-width: 250px;
+  right: 0px;
+  top: 8rem;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .track-crypto,
+  .real-time {
+    font-size: 5rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .track-crypto,
+  .real-time {
+    font-size: 6.5rem;
+    margin: 0;
+  }
+
+  .phone {
+    min-width: 250px;
+    width: 50%;
+  }
+
+  .gradient {
+    min-width: 200px;
+    top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phone-component {
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+  }
+
+  .left-component {
+    width: 100%;
+  }
+
+  .phone {
+    left: -15%;
+  }
+  .gradient {
+    left: 15%;
+  }
+
+  .track-crypto,
+  .real-time {
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .track-crypto:hover {
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .btn-flex {
+    justify-content: center;
+  }
+}

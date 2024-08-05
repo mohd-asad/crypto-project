@@ -22,7 +22,7 @@ function Header() {
         <a href="#">
           <Button
             text={"Dashboard"}
-            outLined={true}
+            outLined={false}
             onClick={() => console.log("Btn Clicked")}
           />
         </a>
