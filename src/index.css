@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&display=swap");
+
 :root {
   --white: #fff;
   --black: #111;
@@ -8,6 +9,7 @@
   --green: #61c96f;
   --red: #f94141;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,27 +24,40 @@ body {
   color: var(--white);
   overflow-x: hidden;
 }
+
 ::selection {
   background-color: var(--blue);
   color: var(--white);
 }
+
 ::-webkit-scrollbar {
   width: 0.3rem;
 }
+
 ::-webkit-scrollbar-track {
   background-color: var(--black);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--blue);
   border-radius: 10px;
 }
+
 img {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
 }
+
 a {
   text-decoration: none;
   color: var(--white) !important;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
