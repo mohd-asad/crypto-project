@@ -17,10 +17,10 @@ function Grid({ coin }) {
           <p className="coin-name">{coin.name}</p>
         </div>
       </div>
-      {coin.market_cap_change_percentage_24h > 0 ? (
+      {coin.price_change_percentage_24h >= 0 ? (
         <div className="chip-flex">
           <div className="price-chip">
-            {coin.market_cap_change_percentage_24h.toFixed(2)}%
+            {coin.price_change_percentage_24h.toFixed(2)}%
           </div>
           <div className="icon-chip">
             <TrendingUpIcon />
