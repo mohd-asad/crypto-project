@@ -1,0 +1,16 @@
+.coin-desc {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.coin-heading {
+  padding-top: 1rem;
+}
+
+.coin-desc a {
+  text-decoration: underline !important;
+}
+
+.coin-desc a:hover {
+  color: var(--blue) !important;
+}
