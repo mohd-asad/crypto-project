@@ -1,6 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto"; //Dont get rid of this
+import { convertNumber } from "../../../functions/convertNumber";
 
 function LineChart({ chartData, multiAxis }) {
   const options = {
@@ -15,11 +16,13 @@ function LineChart({ chartData, multiAxis }) {
       intersect: false,
     },
     scales: {
-    //   crypto1: {
-    //     position: "left",
-    //   },
-      crypto2: multiAxis && {
-        position: "right",
+      y: {
+        ticks: {
+          // Includes a dollar sign in the ticks
+          callback: function (value, index, ticks) {
+            return "$" + convertNumber(value);
+          },
+        },
       },
     },
   };
