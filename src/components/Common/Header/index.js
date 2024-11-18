@@ -20,7 +20,7 @@ function Header() {
         <Link to="/watchlist">
           <p className="link">Watchlist</p>
         </Link>
-        <Link to="dashboard">
+        <Link to="/dashboard">
           <Button
             text={"Dashboard"}
             outLined={false}

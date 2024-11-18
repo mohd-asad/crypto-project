@@ -4,6 +4,7 @@ import Button from "../Common/Button";
 import phone from "../../assets/phone 1.png";
 import gradient from "../../assets/gradient 1.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function MainComponent() {
   return (
@@ -15,7 +16,6 @@ function MainComponent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {" "}
           Track Crypto
         </motion.h1>
         <motion.h1
@@ -24,7 +24,6 @@ function MainComponent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          {" "}
           Real Time.
         </motion.h1>
         <motion.p
@@ -33,7 +32,6 @@ function MainComponent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
-          {" "}
           Track crypto through a public api in real time. Visit the dashboard to
           do so!
         </motion.p>
@@ -43,7 +41,13 @@ function MainComponent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 1.5 }}
         >
-          <Button text={"Dashboard"}></Button>
+          <Link to="/dashboard">
+            <Button
+              text={"Dashboard"}
+              outLined={false}
+              onClick={() => console.log("Btn Clicked")}
+            />
+          </Link>
           <Button text={"Share"} outLined={true}></Button>
         </motion.div>
       </div>

@@ -6,7 +6,6 @@ import { settingCoinObject } from "../functions/setCoinObject";
 import List from "../components/Dashboard/List";
 import CoinInfo from "../components/Coin/CoinInfo";
 import LineChart from "../components/Coin/LineChart/Chart";
-import { convertDate } from "../functions/convertDate";
 import { getCoinData } from "../functions/getCoinData";
 import { getCoinPrices } from "../functions/getCoinPrices";
 import SelectDays from "../components/Coin/SelectDays";

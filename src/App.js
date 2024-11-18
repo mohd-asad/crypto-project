@@ -3,6 +3,7 @@ import "./App.css";
 import HomePage from "./pages/Home";
 import DashboardPage from "./pages/Dashboard";
 import CoinPage from "./pages/Coin";
+import ComparePage from "./pages/Compare";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/coin/:id" element={<CoinPage />} />
-          {/* <Route path="/compare" element={<Compare />} />
-          <Route path="/watchlist" element={<Watchlist />} /> */}
+          <Route path="/compare" element={<ComparePage />} />
+          {/* <Route path="/watchlist" element={<Watchlist />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
